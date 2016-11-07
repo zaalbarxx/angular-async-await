@@ -73,7 +73,7 @@
                   return cb.call.apply(cb, [this].concat(args));
 
                 case 4:
-                  _context.next = 9;
+                  _context.next = 10;
                   break;
 
                 case 6:
@@ -81,19 +81,20 @@
                   _context.t0 = _context['catch'](0);
 
                   $log.error(_context.t0);
+                  throw _context.t0;
 
-                case 9:
-                  _context.prev = 9;
+                case 10:
+                  _context.prev = 10;
 
                   $rootScope.$apply();
-                  return _context.finish(9);
+                  return _context.finish(10);
 
-                case 12:
+                case 13:
                 case 'end':
                   return _context.stop();
               }
             }
-          }, _callee, this, [[0, 6, 9, 12]]);
+          }, _callee, this, [[0, 6, 10, 13]]);
         }));
 
         return function wrapper(_x) {

@@ -27,6 +27,7 @@ const $async = ['$rootScope','$log', ($rootScope, $log) => {
         await cb.call(this, ...args);
       } catch(e) {
         $log.error(e);
+        throw e;
       } finally {
         $rootScope.$apply();
       }
